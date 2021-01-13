@@ -1,0 +1,186 @@
+:root {
+  --primaryColor: #23b73b;
+  --secondaryColor: #ffcc01;
+  --thirdColor: #f42b26;
+}
+
+/* Body */
+
+body {
+  background-color: #000000;
+  margin: 0%;
+  padding: 0;
+  font-family: "Cinzel", serif;
+
+  /* border-bottom: 10px solid #f42a26de; */
+}
+
+/* Jaguar purple image  */
+
+#--jaguar-purple {
+  float: right;
+  width: 45%;
+  top: 100px;
+  right: 50px;
+  position: relative;
+}
+
+/* Li elements in navbar */
+
+ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 35px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #23b73b;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar logo */
+
+.logo-image {
+  width: 90px;
+  height: 71px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 20px;
+  top: -12px;
+}
+
+/* Jaguar heading */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#heading {
+  letter-spacing: 1rem;
+  font-size: 10rem;
+  font-family: "Monoton", cursive;
+  color: black;
+  position: relative;
+  top: 250px;
+  left: 0px;
+}
+
+/* Jaguar colors */
+
+#--ja {
+  color: #23b73b;
+  transition: letter-spacing 2s;
+}
+
+#--ja:hover {
+  position: relative;
+  letter-spacing: 2rem;
+  transition-timing-function: linear;
+}
+
+#--gu {
+  color: #ffcc01;
+  transition: letter-spacing 2s;
+}
+
+#--gu:hover {
+  position: relative;
+  letter-spacing: 2rem;
+  transition-timing-function: linear;
+}
+
+#--ar {
+  color: #f42b26;
+  transition: letter-spacing 2s;
+}
+
+#--ar:hover {
+  position: relative;
+  letter-spacing: 2rem;
+  transition-timing-function: linear;
+}
+
+/* Jaguar image */
+
+#--colorGreen {
+  position: absolute;
+  top: 60px;
+  display: block;
+  background-color: #23b73cde;
+  width: 10px;
+  height: 250px;
+}
+
+#--colorYellow {
+  position: absolute;
+  top: 310px;
+  display: block;
+  background-color: #ffcc01de;
+  width: 10px;
+  height: 250px;
+}
+
+#--colorRed {
+  position: absolute;
+  top: 560px;
+  display: block;
+  background-color: #f42a26de;
+  width: 10px;
+  height: 650px;
+  border-bottom-right-radius: 5px;
+}
+
+#--colorGreenRight {
+  position: absolute;
+  top: 60px;
+  display: block;
+  background-color: #23b73cde;
+  width: 10px;
+  height: 250px;
+  right: 0px;
+}
+
+#--colorYellowRight {
+  position: absolute;
+  top: 310px;
+  display: block;
+  background-color: #ffcc01de;
+  width: 10px;
+  height: 250px;
+  right: 0px;
+}
+
+#--colorRedRight {
+  position: absolute;
+  top: 560px;
+  display: block;
+  background-color: #f42a26de;
+  width: 10px;
+  height: 650px;
+  border-bottom-right-radius: 5px;
+  right: 0px;
+}
+
+/* First section conteiner */
+
+.section--1 {
+  position: relative;
+  top: 64vh;
+}
