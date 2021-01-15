@@ -1,5 +1,5 @@
 const nav = document.querySelector(".nav");
-const section1 = document.querySelector(".section--1");
+const section1 = document.querySelector(".spanLink");
 // Nav links hover effects
 
 const handleHover = function (e) {
@@ -36,3 +36,5 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(section1);
 
 //  Responsive navbar
+
+// Chellange kata
