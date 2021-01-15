@@ -2,6 +2,7 @@
   --primaryColor: #23b73b;
   --secondaryColor: #ffcc01;
   --thirdColor: #f42b26;
+  --fourthColor: #663399;
 }
 
 /* Body */
@@ -13,6 +14,10 @@ body {
   font-family: "Lora", serif;
   min-height: 250vh;
   box-sizing: border-box;
+}
+
+hr {
+  color: #663399;
 }
 
 /* ------------------------------------- */
@@ -30,15 +35,8 @@ body {
 }
 
 a:hover {
-  color: #000000;
+  color: #ffffff;
   letter-spacing: 1px;
-  transition: all 0.3s;
-}
-
-.nav-link:link,
-.nav-link:visited {
-  font-size: 21px;
-  font-weight: 400;
   transition: all 0.3s;
 }
 
@@ -69,7 +67,7 @@ li {
   border-bottom: 1px solid rgb(252, 235, 3);
 }
 
-.sticky {
+.sticky--main {
   position: fixed;
   background-color: #23b73c;
   width: 100%;
@@ -94,6 +92,7 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  /* border-bottom: 1px solid rgba(252, 235, 3, 0.63); */
 }
 
 .header--divs {
@@ -156,15 +155,121 @@ li {
   width: 90%;
 }
 
+/* Parth with quoute, h2 */
+
+.first--section {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.h2--second--heading {
+  font-size: 3rem;
+  text-align: center;
+  color: #663399;
+}
+
+#--techno {
+  color: #23b73b;
+}
+
+#--berlin {
+  color: #f42b26;
+}
+
+#--1992 {
+  color: #ffcc01;
+}
+
+/* Image div */
+
+.image--div {
+  width: 100%;
+  height: 50vh;
+  background-image: url(/berlin\ big.jpg);
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+/* Main section*/
+
+.main--container {
+  margin-top: 50px;
+}
+
+.main--section--div {
+  height: 330px;
+  margin-top: 50px;
+}
+
+.left--one {
+  border-radius: 5px;
+  background-image: url(/firstimg.jpg);
+  background-size: cover;
+}
+
+.right--one {
+  color: rgb(197, 72, 197);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.h3--main-section {
+  color: #663399;
+  font-size: 2rem;
+}
+
+.span--circle {
+  border: 1px solid #663399a9;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-image: url(/rsz_image-span-one.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+/* Second row */
+
+.left--second--one {
+  background-image: url(/0573a91aec59b32532c5fc6ebea57e46.jpg);
+}
+
+/* Third row */
+
+.left--third--one {
+  background-image: url(/berghain_1.jpg);
+}
+
+/* ---------------------------------- */
 /* media queries */
+
+@media (max-width: 3000px) {
+  #heading {
+    font-size: 7.5rem;
+    position: relative;
+    top: -25px;
+    margin-left: 35px;
+  }
+}
+
 @media (max-width: 1200px) {
   #heading {
     font-size: 5rem;
+    position: relative;
+    top: -25px;
+    margin-left: 35px;
   }
 }
 @media (max-width: 940px) {
   #heading {
     font-size: 6rem;
+    position: relative;
+    top: 50px;
+    margin-left: 0px;
   }
 
   #header--one {
@@ -187,6 +292,9 @@ li {
   #heading {
     font-size: 5rem;
     letter-spacing: 0.5;
+  }
+  .h2--second--heading {
+    font-size: 2rem;
   }
 }
 
