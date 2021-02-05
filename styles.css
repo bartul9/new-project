@@ -14,10 +14,11 @@ body {
   font-family: "Lora", serif;
   min-height: 250vh;
   box-sizing: border-box;
+  min-height: 400vh;
 }
 
 hr {
-  color: #663399;
+  color: #ffffff;
 }
 
 /* ------------------------------------- */
@@ -36,8 +37,7 @@ hr {
 
 a:hover {
   color: #ffffff;
-  letter-spacing: 1px;
-  transition: all 0.3s;
+  transition: 400ms;
 }
 
 ul {
@@ -64,7 +64,7 @@ li {
   height: 50px;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid rgb(252, 235, 3);
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .sticky--main {
@@ -162,9 +162,9 @@ li {
   margin-bottom: 50px;
 }
 .h2--second--heading {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  color: #663399;
+  color: #ffffff;
 }
 
 #--techno {
@@ -183,27 +183,47 @@ li {
 
 .image--div {
   width: 100%;
-  height: 50vh;
-  background-image: url(/berlin\ big.jpg);
-  background-size: cover;
+  height: 65vh;
   margin-bottom: 100px;
+  background-color: #23b73b;
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#image--one {
+  width: 65%;
+  border-radius: 5px;
+  position: relative;
+  left: -25px;
+  top: -10px;
+  height: 70vh;
+  border: 1px solid white;
+}
+.text--one {
 }
 
 /* Main section*/
-
 .main--container {
-  margin-top: 50px;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.main--section--div {
-  height: 330px;
-  margin-top: 50px;
-}
-
-.left--one {
-  border-radius: 5px;
-  background-image: url(/firstimg.jpg);
-  background-size: cover;
+#second--img {
+  width: 50%;
+  position: relative;
+  top: -30px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .right--one {
@@ -230,18 +250,6 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
-}
-
-/* Second row */
-
-.left--second--one {
-  background-image: url(/0573a91aec59b32532c5fc6ebea57e46.jpg);
-}
-
-/* Third row */
-
-.left--third--one {
-  background-image: url(/berghain_1.jpg);
 }
 
 /* ---------------------------------- */
@@ -285,6 +293,12 @@ li {
   }
   #img--jaguar {
     width: 60%;
+  }
+}
+
+@media (max-width: 770px) {
+  .image--div {
+    flex-direction: column;
   }
 }
 
