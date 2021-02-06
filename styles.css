@@ -254,6 +254,14 @@ li {
   height: 75vh;
 }
 
+.big--section {
+  background-color: #23b73c17;
+  position: absolute;
+  height: 402vh;
+  -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
+}
+
 /* ----------------------------- */
 
 .info--section {
@@ -278,7 +286,13 @@ li {
   font-weight: 400;
   color: white;
   transition: 500ms;
-  background-color: #23b73c11;
+  background: rgb(35, 183, 59);
+  background: linear-gradient(
+    302deg,
+    rgba(35, 183, 59, 0.05) 0%,
+    rgba(45, 144, 60, 0.05) 51%,
+    rgba(35, 183, 59, 0.05) 91%
+  );
 }
 
 .info--zone:hover {
@@ -295,7 +309,7 @@ li {
   color: #23b73b;
 }
 .days {
-  color: #663399;
+  color: #f42b26;
 }
 .options {
   font-size: 20px;
@@ -411,7 +425,7 @@ li {
   border-left: 1px solid #663399;
   border-right: 1px solid #f42b26;
   border-radius: 25px;
-  background-color: #ffffff11;
+  background-color: #ffffff1a;
 }
 
 /* ------------------------- */
