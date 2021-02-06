@@ -1,21 +1,15 @@
+"use strict";
+
 const nav = document.querySelector(".nav");
 const section1 = document.querySelector(".section--one");
 
-// Nav links hover effects
+// map
 
-// const handleHover = function (e) {
-//   if (e.target.classList.contains("nav-link")) {
-//     const link = e.target;
-//     const siblings = link.closest(".nav").querySelectorAll(".nav-link");
-//     const logo = link.closest(".nav").querySelector("img");
+var map = L.map("mapid").setView([52.52, 13.405], 10);
 
-//     siblings.forEach((el) => {
-//       if (el !== link) el.style.opacity = this;
-//     });
-//     logo.style.opacity = this;
-//   }
-// };
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(map);
 
-// nav.addEventListener("mouseover", handleHover.bind(0.5));
-
-// nav.addEventListener("mouseout", handleHover.bind(1));
+L.marker([52.52, 13.405]).addTo(map).openPopup();
