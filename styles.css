@@ -462,9 +462,9 @@ li {
     rgba(45, 144, 60, 0.8) 51%,
     rgba(35, 183, 59, 0.8) 91%
   ); */
-  background-image: url(/opacity-last.png);
+  background-image: url(/techno-photo-1.png);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 
 /* .section--footer:hover {
@@ -473,9 +473,21 @@ li {
 } */
 
 .lastText {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: rgb(35, 183, 60);
+  background: linear-gradient(
+    302deg,
+    rgba(35, 183, 59, 0.7) 0%,
+    rgba(40, 183, 60, 0.7) 51%,
+    rgba(35, 183, 59, 0.7) 91%
+  );
+  padding: 5px;
+  border-radius: 15px;
+  height: 70px;
   color: #ffffff;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   letter-spacing: 1px;
   font-style: italic;
 }
