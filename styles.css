@@ -225,6 +225,20 @@ li {
 }
 .text--one {
 }
+
+#top {
+  height: 20px;
+  width: 35px;
+  position: relative;
+  left: 49.2%;
+  bottom: 10px;
+  transition: 500ms;
+}
+
+#top:hover {
+  cursor: pointer;
+  transform: scaleY(1.1);
+}
 /*---------------------------------*/
 /* Round image section  */
 
@@ -257,7 +271,7 @@ li {
 .big--section {
   background-color: #23b73c17;
   position: absolute;
-  height: 402vh;
+  height: 415vh;
   -webkit-clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 22%, 100% 0, 100% 100%, 0 100%);
 }
@@ -425,7 +439,7 @@ li {
   border-left: 1px solid #663399;
   border-right: 1px solid #f42b26;
   border-radius: 25px;
-  background-color: #ffffff1a;
+  background-color: #ffffff18;
 }
 
 /* ------------------------- */
@@ -433,20 +447,24 @@ li {
 .section--footer {
   height: 35vh;
   transition: 500ms;
-  border-left: 3px solid #663399;
-  border-right: 3px solid #f42b26;
+  border-left: 1px solid #23b73c;
+  border-right: 1px solid #23b73c;
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  background: rgb(35, 183, 59);
+  margin-top: 170px;
+  /* background: rgb(35, 183, 59);
   background: linear-gradient(
     302deg,
-    rgba(35, 183, 59, 1) 0%,
-    rgba(45, 144, 60, 1) 51%,
-    rgba(35, 183, 59, 1) 91%
-  );
+    rgba(35, 183, 59, 0.8) 0%,
+    rgba(45, 144, 60, 0.8) 51%,
+    rgba(35, 183, 59, 0.8) 91%
+  ); */
+  background-image: url(/opacity-last.png);
+  background-size: cover;
+  background-position: bottom;
 }
 
 /* .section--footer:hover {
@@ -455,6 +473,7 @@ li {
 } */
 
 .lastText {
+  color: #ffffff;
   text-align: center;
   font-size: 40px;
   letter-spacing: 1px;
