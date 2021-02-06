@@ -15,10 +15,11 @@ body {
   min-height: 250vh;
   box-sizing: border-box;
   min-height: 400vh;
+  color: #ffffff;
 }
 
 hr {
-  color: #ffffff;
+  color: #23b73c;
 }
 
 /* ------------------------------------- */
@@ -60,7 +61,7 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #23b73b;
+  background-color: #23b73c;
   height: 50px;
   margin: 0;
   padding: 0;
@@ -161,11 +162,6 @@ li {
   margin-top: 100px;
   margin-bottom: 50px;
 }
-.h2--second--heading {
-  font-size: 2rem;
-  text-align: center;
-  color: #ffffff;
-}
 
 #--techno {
   color: #23b73b;
@@ -184,9 +180,15 @@ li {
 .image--div {
   width: 100%;
   height: 65vh;
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 100px;
-  background-color: #23b73b;
+  background: rgb(35, 183, 59);
+  background: linear-gradient(
+    302deg,
+    rgba(35, 183, 59, 1) 0%,
+    rgba(45, 144, 60, 1) 51%,
+    rgba(35, 183, 59, 1) 91%
+  );
   color: white;
   border-radius: 10px;
   border: 1px solid white;
@@ -208,30 +210,91 @@ li {
 .text--one {
 }
 /*---------------------------------*/
+/* Round image section  */
+
+.round--image {
+  height: 330px;
+  border: 1px solid #23b73c;
+  width: 25%;
+  position: relative;
+  left: 38%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+  background-image: url(/jag2.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.h2--second--heading {
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* ----------------------------- */
 
 .info--section {
-  border: 1px solid grey;
-  height: 70vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 100px;
 }
 .info--zone {
-  border-left: 1px solid #663399;
-  border-right: 1px solid #f42b26;
+  border-radius: 5px;
+  border-left: 1px solid #23b73b;
+  border-right: 1px solid #23b73c;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   width: 30%;
   height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  -webkit-box-shadow: 0px 2px 0px 2px #23b73c;
+  box-shadow: 0px 2px 0px 2px #23b73c;
+  transition: 500ms;
+}
+
+.info--zone:hover {
+  cursor: pointer;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+}
+.hours {
+  color: #23b73b;
+}
+.days {
+  color: #663399;
+}
+.options {
+  font-size: 20px;
+}
+#mapid {
+  border-right: 4px solid #23b73b;
+  border-left: 4px solid #23b73b;
+  height: 300px;
+  width: 30%;
+  border-radius: 10px;
 }
 
 /* Main section*/
 .main--container {
-  position: relative;
-  top: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  margin-top: 150px;
 }
 .main--divs {
   width: 100%;
@@ -240,7 +303,13 @@ li {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #23b73b;
+  background: rgb(35, 183, 59);
+  background: linear-gradient(
+    302deg,
+    rgba(35, 183, 59, 1) 0%,
+    rgba(45, 144, 60, 1) 51%,
+    rgba(35, 183, 59, 1) 91%
+  );
   border-radius: 10px;
   border: 1px solid white;
   padding: 15px;
@@ -270,13 +339,22 @@ li {
   justify-content: center;
   width: 100%;
 }
-
 .h3--main-section {
   color: #ffffff;
 }
+.imageSlider {
+  margin-top: 100px;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
-/* ---------------------------------- */
-/* media queries */
+.slider-div {
+  width: 33%;
+  border: 1px solid rgb(255, 255, 255);
+  height: 50vh;
+}
 
 @media (max-width: 3000px) {
   #heading {
@@ -286,7 +364,6 @@ li {
     margin-left: 35px;
   }
 }
-
 @media (max-width: 1200px) {
   #heading {
     font-size: 5rem;
@@ -302,7 +379,6 @@ li {
     top: 50px;
     margin-left: 0px;
   }
-
   #header--one {
     display: flex;
     flex-direction: column;
@@ -318,7 +394,6 @@ li {
     width: 60%;
   }
 }
-
 @media (max-width: 770px) {
   .image--div {
     flex-direction: column;
@@ -327,7 +402,6 @@ li {
     flex-direction: column;
   }
 }
-
 @media (max-width: 530px) {
   #heading {
     font-size: 5rem;
@@ -337,7 +411,6 @@ li {
     font-size: 2rem;
   }
 }
-
 @media (max-width: 470px) {
   #heading {
     font-size: 4rem;
