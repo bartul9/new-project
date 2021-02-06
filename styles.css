@@ -206,7 +206,7 @@ li {
   );
   color: white;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid #23b73c;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -246,7 +246,7 @@ li {
 .h2--second--heading {
   font-size: 2rem;
   text-align: center;
-  color: #ffffff;
+  color: #663399;
 }
 
 .jaguar--cercle {
@@ -333,8 +333,8 @@ li {
     rgba(35, 183, 59, 1) 91%
   );
   border-radius: 10px;
-  border: 1px solid white;
-  padding: 15px;
+  border: 1px solid #23b73c;
+  padding: 50px;
 }
 
 .second--p {
@@ -345,7 +345,7 @@ li {
   width: 90%;
   position: relative;
   top: -10px;
-  left: -5px;
+  left: 25px;
   border: 1px solid white;
   border-radius: 10px;
   height: 70vh;
@@ -375,11 +375,9 @@ li {
 .testimonials--image {
   width: 75px;
   height: 75px;
-
   border-radius: 50%;
   position: relative;
   top: -15px;
-
   background-size: cover;
 }
 .nina {
@@ -414,6 +412,39 @@ li {
   border-right: 1px solid #f42b26;
   border-radius: 25px;
   background-color: #ffffff11;
+}
+
+/* ------------------------- */
+
+.section--footer {
+  height: 35vh;
+  transition: 500ms;
+  border-left: 3px solid #663399;
+  border-right: 3px solid #f42b26;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: rgb(35, 183, 59);
+  background: linear-gradient(
+    302deg,
+    rgba(35, 183, 59, 1) 0%,
+    rgba(45, 144, 60, 1) 51%,
+    rgba(35, 183, 59, 1) 91%
+  );
+}
+
+/* .section--footer:hover {
+  opacity: 0.7;
+  cursor: pointer;
+} */
+
+.lastText {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-style: italic;
 }
 
 @media (max-width: 3000px) {
