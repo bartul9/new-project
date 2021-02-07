@@ -428,6 +428,7 @@ a {
   font-weight: 400;
 }
 .cc {
+  color: #16d336;
   font-size: 20px;
 }
 .slider-div {
@@ -441,12 +442,19 @@ a {
   border-left: 1px solid #663399;
   border-right: 1px solid #f42b26;
   border-radius: 25px;
-  background: rgb(0, 0, 0);
+  background: rgb(35, 183, 60);
+  background: linear-gradient(
+    302deg,
+    #23b73c77 0%,
+    #23b73c75 51%,
+    #23b73c6b 91%
+  );
+  /* background: rgb(0, 0, 0);
   background: linear-gradient(
     298deg,
     rgba(0, 0, 0, 1) 0%,
     rgba(41, 40, 36, 1) 100%
-  );
+  ); */
 }
 .section {
   transition: transform 1s, opacity 1s;
@@ -495,12 +503,7 @@ a {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   background: rgb(35, 183, 60);
-  background: linear-gradient(
-    302deg,
-    #23b73cbd 0%,
-    #23b73cb2 51%,
-    #23b73caf 91%
-  );
+  background: linear-gradient(302deg, #23b73c 0%, #23b73c 51%, #23b73c 91%);
   padding: 5px;
   border-radius: 15px;
   height: 50px;
@@ -599,11 +602,17 @@ a {
   .info--zone {
     width: 400px;
     margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 770px) {
   #image--one {
     width: 80%;
+  }
+  .right--one {
+    position: relative;
+    top: -30px;
   }
   .lastText {
     font-size: 25px;
@@ -641,7 +650,11 @@ a {
   .lastText {
     font-size: 20px;
     width: 100%;
-    height: 70px;
+    height: 40px;
+  }
+  .right--one {
+    position: relative;
+    top: 0px;
   }
   #img--jaguar {
     position: relative;
@@ -669,13 +682,15 @@ a {
     font-size: 5rem;
     letter-spacing: 0.5;
   }
-  .h2--second--heading {
-    font-size: 2rem;
-  }
 }
 @media (max-width: 470px) {
   #second--img {
     height: auto;
+  }
+  .lastText {
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
   }
   #heading {
     font-size: 4rem;
