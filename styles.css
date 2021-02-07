@@ -671,6 +671,9 @@ a {
     font-size: 3.5rem;
     letter-spacing: 0.05;
   }
+  #spanPurple {
+    top: 170px;
+  }
   li {
     margin-left: 0px;
   }
@@ -681,6 +684,10 @@ a {
 @media (max-width: 370px) {
   .info--zone {
     width: 300px;
+  }
+  #spanPurple {
+    left: 50px;
+    top: 170px;
   }
   .round--image {
     width: 270px;
